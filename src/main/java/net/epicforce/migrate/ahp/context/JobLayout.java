@@ -70,15 +70,20 @@ public class JobLayout
     {
         LOG.debug("Building JobLayout: {}", def);
 
+        // Make a linked list we can iterate off of later.
+        iterableList = new LinkedList<WorkflowDefinitionJobConfig>();
+
+        // Might not be one
+        if(def == null) {
+            return;
+        }
+
         // Extract the table graph
         TableDisplayableGraph<WorkflowDefinitionJobConfig> g =
                                 def.getWorkflowJobConfigGraph();
 
         // What is the current Parallel Group
         ParallelGroup currentGroup = null;
-
-        // Make a linked list we can iterate off of later.
-        iterableList = new LinkedList<WorkflowDefinitionJobConfig>();
 
         LOG.debug("Max depth of graph: {}", g.getMaxDepth());
 
