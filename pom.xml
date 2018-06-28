@@ -172,6 +172,11 @@
     </dependency>
     <dependency>
       <groupId>com.urbancode</groupId>
+      <artifactId>commons-graph</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.urbancode</groupId>
       <artifactId>remotingsupport</artifactId>
       <version>1.0</version>
     </dependency>

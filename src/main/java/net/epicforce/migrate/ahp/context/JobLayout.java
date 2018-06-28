@@ -42,8 +42,8 @@ import java.util.List;
 
 import com.urbancode.anthill3.domain.workflow.WorkflowDefinition;
 import com.urbancode.anthill3.domain.workflow.WorkflowDefinitionJobConfig;
-import com.urbancode.commons.dag.TableDisplayableGraph;
-import com.urbancode.commons.dag.Vertex;
+import com.urbancode.commons.graph.TableDisplayableGraph;
+import com.urbancode.commons.graph.Vertex;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
